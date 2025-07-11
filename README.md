@@ -30,10 +30,11 @@ Aplicação Spring Boot para gerar QR Codes e armazená-los automaticamente no A
 
 ### Configuração
 Crie um arquivo `.env` na raiz do projeto com:
-
-```properties
 AWS_ACCESS_KEY_ID=SUA_ACCESS_KEY
 AWS_SECRET_ACCESS_KEY=SUA_SECRET_KEY
+
+```no application.properties
+spring.application.name=qrcode.generator
 AWS_REGION=us-east-1
 S3_BUCKET_NAME=meu-bucket-qrcodes
 
